@@ -26,6 +26,7 @@
 
 ------------------------------------------------------------------------
 ВАРИАНТ 1:
+
 Запуск проекта производится через docker-compose
 
 Перейти в папку skymarket:
@@ -39,21 +40,19 @@ docker-compouse up --build -d
 ------------------------------------------------------------------------
 ВАРИАНТ 2:
 
-Запуск проекта через manage.py
 Установить зависимости
 pip install -r requirements.txt
 
 Создать .env файл, в нем прописать все свои данные, что есть в .env.example
+
+Создайте базу данных psql -U (ваш логин в постгрес). 
 
 Зайти в config/settings.py и загнать в DATABASES: HOST, PORT под #
 
 Произвести миграцию таблиц в базу данных
 python manage.py migrate
 
-Загрузить фикстуры в базу данных
-python manage.py loaddata users.json
-python manage.py loaddata ads.json
-python manage.py loaddata comments.json
+Загрузить фикстуры в базу данных, если вам они требуются
 
 Запустить сервер
 python manage.py runserver
