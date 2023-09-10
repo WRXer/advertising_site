@@ -31,6 +31,8 @@
 Перейти в папку skymarket:
 cd skymarket
 
+Создать .env файл, в нем прописать все свои данные, что есть в .env.example
+
 Выполнить команду:
 docker-compouse up --build -d
 
@@ -40,6 +42,8 @@ docker-compouse up --build -d
 Запуск проекта через manage.py
 Установить зависимости
 pip install -r requirements.txt
+
+Создать .env файл, в нем прописать все свои данные, что есть в .env.example
 
 Произвести миграцию таблиц в базу данных
 python manage.py migrate
