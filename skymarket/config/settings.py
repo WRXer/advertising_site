@@ -123,8 +123,8 @@ DATABASES = {
         'NAME': os.getenv('DB_NAME'), # Название БД
         'USER': os.getenv('DB_USER'), # Пользователь для подключения
         'PASSWORD': os.getenv('DB_PASSWORD'), # Пароль для этого пользователя
-        'HOST': 'db',  #os.getenv('DB_HOST'),
-        'PORT': os.getenv('DB_PORT')
+        #'HOST': 'db',  #os.getenv('DB_HOST'),
+        #'PORT': os.getenv('DB_PORT')
     }
 
 }
@@ -172,9 +172,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "django_media")
 
 # CORS
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:8000',  # Замените на адрес вашего фронтенд-сервера
+    'http://localhost:3000',  # Замените на адрес вашего фронтенд-сервера
 ]
-CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
