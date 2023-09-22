@@ -36,3 +36,4 @@ volumes:
   app:
   db:
     driver: local
+
